@@ -1,6 +1,8 @@
 
 Angular 4 frontend - "Moviestore"
 
+Demo : http://ngmovies.dev-sunil.ml/
+
 ![ScreenShot](https://github.com/srsinfosystems/movies/blob/master/src/assets/images/screenshot.png)
 
 Implement a "movie store" (like blockbusters or Netflix). The store needs to hold a number of movies (let’s say 10 or 15 is sufficient for our testing purposes). The following design concept deals as example for the basic layout of your moviestore:
