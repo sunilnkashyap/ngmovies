@@ -1,0 +1,121 @@
+.sk-container{
+    margin-left:7%;
+}
+
+.reviews-section {
+	padding:2em;
+}
+h4{color:#fff;}
+h3.head {
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: 700;
+}
+.movie-pic {
+	float:left;
+	width:24%;
+	margin-right:3%;
+}
+.movie-pic img {
+	width: 100%;
+}
+.review-info {
+	float:left;
+	width:73%;
+}
+.review {
+	margin-top: 4em;
+}
+a.span {
+	color: #fff;
+	font-size: 1.8em;
+	text-decoration:none;
+	font-weight: 600;
+}
+p.dirctr {
+	color: #B1B1B1;
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+p.dirctr a {
+	color: #B1B1B1;
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 10px;
+	text-decoration:none;
+}
+.yrw {
+	margin: 2em 0;
+}
+p.ratingview {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 600;
+	float: left;
+	margin:10px 0px;
+}
+.rating {
+		  direction: rtl;
+		  text-align: center;
+		    float: left;
+			margin:10px 10px;
+		}
+		.rating > span {
+		  display: inline-block;
+		  position: relative;
+		  width: 1.1em;
+		}
+		.rating > span:hover,
+		.rating > span:hover ~ span {
+		  color: transparent;
+		}
+		.rating > span:hover:before,
+		.rating > span:hover ~ span:before {
+		   content: "\2605";
+		   position: absolute;
+		   left: 0;
+		   color: gold;
+		}
+p.info {
+	font-size: 1em;
+	font-weight: 400;
+	color: #fff;
+	margin: 15px 0px;
+	overflow: hidden;
+}
+p.info span{color:#ccc;}
+.dropdown {
+  padding: 4px 0;
+  float:left;
+  outline: none;
+  width:23%;
+  margin-bottom:0.5em;
+}
+.rtm {
+	float:left;
+	width:23%;
+	margin-top:6px;
+}
+.rtm a {
+	text-decoration:none;
+	color:#fff;
+	background:#df2411;
+	padding:5px 10px;
+}
+.rtm a:hover,.wt a:hover {
+	background:#000;
+}
+.wt {
+	float:left;
+	width:23%;
+	margin-top:6px;
+}
+.wt a {
+	text-decoration:none;
+	color:#fff;
+	background:#37a4c5;	
+	padding:5px 10px;
+}
+
+p{color:#fff;}

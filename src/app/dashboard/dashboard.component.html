@@ -1,0 +1,62 @@
+<app-sidebar></app-sidebar>
+<div class="sk-container">
+    <md-grid-list cols="6" rowHeight="4:7">
+        <md-grid-tile *ngFor="let movie of movies">
+            <div style="padding-left:10px;">
+                <div id="effect-6" class="effects clearfix">
+                    <div class="img {{hover}}" [class.hover]="movie.adult" (mouseenter)="movie.adult=true" (mouseleave)="movie.adult=false">
+                        <img src="http://image.tmdb.org/t/p/w185{{movie.poster_path}}" alt="">
+                        <div class="overlay">
+                            <a [routerLink]="['/play',movie.id]" class="expand"><i class="material-icons md-7vw">play_circle_filled</i></a>
+                            <div class="close-overlay">
+                                <i (click)="addFavorite(movie)" class="material-icons md-3vw">favorite</i>
+                                <i class="material-icons md-3vw">screen_share</i>
+                                <i class="material-icons md-3vw">more_horiz</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%">
+                    <h4>{{movie.title | limitTo:20}}</h4>
+                    <span>{{genres[movie.genre_ids[0]]}}</span>
+                    <span style="float: right;margin-right:12%;margin-top:2%">{{movie.release_date}}</span>
+                    <div style="width:50%">
+                        <star-rating-comp style="width:50%" [starType]="'icon'" [hoverEnabled]="true" [rating]="movie.vote_average / 2"></star-rating-comp>
+                    </div>
+                </div>
+            </div>
+        </md-grid-tile>
+
+<!--
+        <md-grid-tile>
+            <div style="width:100%;">
+                <div id="effect-6" class="effects clearfix">
+                    <div class="img {{hover}}" [class.hover]="mouseOvered2" (mouseenter)="mouseOvered2=true" (mouseleave)="mouseOvered2=false">
+                        <img src="/assets/images/poster.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="expand"><i class="material-icons md-7vw">play_circle_filled</i></a>
+                            <div class="close-overlay">
+                                <i class="material-icons md-3vw">favorite</i>
+                                <i class="material-icons md-3vw">screen_share</i>
+                                <i class="material-icons md-3vw">more_horiz</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%">
+                    <h4>HOBBIT: THE DESOLATION OF SAMU.. </h4>
+                    <span>Action</span>
+                    <span style="float: right;margin-right:12%;">130Min</span>
+                    <div style="width:35%">
+                        <star-rating-comp style="width:50%" [starType]="'icon'" [hoverEnabled]="true" [rating]="2.63"></star-rating-comp>
+                    </div>
+                </div>
+            </div>
+        </md-grid-tile>
+-->
+
+
+    </md-grid-list>
+    
+<!--    <button (click)="getMovies()" >get data</button>-->
+</div>

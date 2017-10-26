@@ -1,0 +1,42 @@
+<app-sidebar></app-sidebar>
+<div class="sk-container">
+    <div class="single-content">
+        <div class="reviews-section">
+            <h3 class="head">{{mdata.title}}</h3>
+            <div class="col-md-9 reviews-grids">
+                <div class="review">
+                    <div class="movie-pic">
+                        <a href="single.html"><img src="http://image.tmdb.org/t/p/w185{{mdata.poster_path}}" alt="" /></a>
+                    </div>
+                    <div class="review-info">
+                        <a class="span" href="single.html"><i>{{mdata.original_title}}</i></a>
+                        <p class="dirctr"><a href="">Reagan Gavin Rasquinha, </a>TNN, Mar 12, 2015, 12.47PM IST</p>
+                        <p class="ratingview">Critic's Rating:
+                            <star-rating-comp style="width:10%" [starType]="'icon'" [hoverEnabled]="true" [rating]="mdata.vote_average / 2"></star-rating-comp>
+                        </p>
+
+                        <p class="ratingview">
+                            &nbsp;{{mdata.vote_average / 2}}/5
+                        </p>
+                        <div class="clearfix"></div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <p class="info">PRODUCTION:<span> {{pcom}} </span></p>
+                        <p class="info">GENRES: <span> {{gname}} </span></p>
+                        <p class="info">DATE: <span> {{mdata.release_date}} </span></p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="single">
+                    <p><i>{{mdata.tagline}}</i></p>
+                </div>
+                <div class="story-review">
+                    <h4>OVERVIEW:</h4>
+                    <p>{{mdata.overview}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<div class="menu">
+    <ul>
+        <li class="sk-border-bottom sk-center">
+            <a class="" [routerLink]="['/dashboard']">
+                <img class="sk-avatar" src="./assets/images/avatar.png" />
+            </a>
+        </li>
+        <li>
+            <a class="{{active}}" [class.active]="tab == 'latest' ? true : false" [routerLink]="['/dashboard','latest']">
+                <i class="material-icons">access_time</i>
+                <p>Latest</p>
+            </a>
+        </li>
+        <li>
+            <a class="{{active}}" [class.active]="tab == 'popular' ? true : false" [routerLink]="['/dashboard','popular']">
+                <i class="material-icons">star</i>
+                <p>popular</p>
+            </a>
+        </li>
+        <li>
+            <a class="{{active}}" [class.active]="tab == 'favorites' ? true : false" [routerLink]="['/dashboard','favorites']">
+                <i class="material-icons">favorite</i>
+                <p>Favorites</p>
+            </a>
+        </li>
+        <li>
+            <a class="{{active}}" [class.active]="tab == 'watchlist' ? true : false" [routerLink]="['/dashboard','watchlist']">
+                <i class="material-icons">list</i>
+                <p>Watchlist</p>
+            </a>
+        </li>
+        <li>
+            <a class="{{active}}" [class.active]="curl == 'search' ? true : false" [routerLink]="['/search']">
+                <i class="material-icons">search</i>
+                <p>Search</p>
+            </a>
+        </li>
+        <li style="bottom: 0px;">
+            <a [routerLink]="['/dashboard','genres']">
+                <i class="material-icons">apps</i>
+                <p>Genres</p>
+            </a>
+        </li>
+    </ul>
+    <ul class="sk">
+        <li>
+            <a [routerLink]="['/logout']">
+                <i class="material-icons">power_settings_new</i>
+                <p>Sign Out</p>
+            </a>
+        </li>
+    </ul>
+</div>
