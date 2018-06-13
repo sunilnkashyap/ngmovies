@@ -1,7 +1,7 @@
 <app-sidebar></app-sidebar>
 <div class="sk-container">
-    <md-grid-list cols="6" rowHeight="4:7">
-        <md-grid-tile *ngFor="let movie of movies">
+    <mat-grid-list cols="6" rowHeight="4:7">
+        <mat-grid-tile *ngFor="let movie of movies">
             <div style="padding-left:10px;">
                 <div id="effect-6" class="effects clearfix">
                     <div class="img {{hover}}" [class.hover]="movie.adult" (mouseenter)="movie.adult=true" (mouseleave)="movie.adult=false">
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-        </md-grid-tile>
+        </mat-grid-tile>
 
 <!--
         <md-grid-tile>
@@ -56,7 +56,7 @@
 -->
 
 
-    </md-grid-list>
+    </mat-grid-list>
     
 <!--    <button (click)="getMovies()" >get data</button>-->
 </div>

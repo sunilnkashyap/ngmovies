@@ -1,9 +1,9 @@
-md-grid-tile h4{
+mat-grid-tile h4{
     color:#fff;font-weight: normal;padding: 5px;
     margin-bottom:2px;
     font-size: 1vw;
 }
-md-grid-tile span{
+mat-grid-tile span{
     color:#7a7373;
     padding-left:5px;
     font-size: 1vw;
