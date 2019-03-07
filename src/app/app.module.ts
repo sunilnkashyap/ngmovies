@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { APP_BASE_HREF } from '@angular/common';
 
 import { RouterModule } from '@angular/router';
-import { HttpModule }    from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatGridListModule} from '@angular/material';
