@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { APP_BASE_HREF } from '@angular/common';
 
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
@@ -33,23 +32,23 @@ import { PlayComponent } from './play/play.component';
   ],
   imports: [
       HttpModule,
-    BrowserModule, 
-    BrowserAnimationsModule, 
-    MatButtonModule, 
-    MatCheckboxModule, 
-    MatGridListModule, 
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatGridListModule,
     RouterModule.forRoot([
-        {path:'home', component:HomeComponent},
-        {path:'dashboard', component:DashboardComponent},
-        {path:'dashboard/:tab', component:DashboardComponent},
-        {path:'play', component:DashboardComponent},
-        {path:'play/:id', component:PlayComponent},
-        {path:'login', component:LoginComponent},
-        {path: '', redirectTo: '/dashboard/latest', pathMatch: 'full'}
+        {path: 'ngmovies/home', component: HomeComponent},
+        {path: 'ngmovies/dashboard', component: DashboardComponent},
+        {path: 'ngmovies/dashboard/:tab', component: DashboardComponent},
+        {path: 'ngmovies/play', component: DashboardComponent},
+        {path: 'ngmovies/play/:id', component: PlayComponent},
+        {path: 'ngmovies/login', component: LoginComponent},
+        {path: 'ngmovies', redirectTo: 'ngmovies/dashboard/latest', pathMatch: 'full'}
     ]),
       StarRatingModule.forRoot()
   ],
-  providers: [{provide: APP_BASE_HREF, useValue : 'ngmovies' }, MoviedbService],
+  providers: [MoviedbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
