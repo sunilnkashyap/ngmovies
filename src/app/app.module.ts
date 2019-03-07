@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { RouterModule } from '@angular/router';
 import { HttpModule }    from '@angular/http';
@@ -32,7 +33,12 @@ import { PlayComponent } from './play/play.component';
   ],
   imports: [
       HttpModule,
-    BrowserModule, BrowserAnimationsModule, MatButtonModule, MatCheckboxModule, MatGridListModule, RouterModule.forRoot([
+    BrowserModule, 
+    BrowserAnimationsModule, 
+    MatButtonModule, 
+    MatCheckboxModule, 
+    MatGridListModule, 
+    RouterModule.forRoot([
         {path:'home', component:HomeComponent},
         {path:'dashboard', component:DashboardComponent},
         {path:'dashboard/:tab', component:DashboardComponent},
@@ -40,11 +46,10 @@ import { PlayComponent } from './play/play.component';
         {path:'play/:id', component:PlayComponent},
         {path:'login', component:LoginComponent},
         {path: '', redirectTo: '/dashboard/latest', pathMatch: 'full'}
-        
     ]),
       StarRatingModule.forRoot()
   ],
-  providers: [MoviedbService],
+  providers: [{provide: APP_BASE_HREF, useValue : 'ngmovies' }, MoviedbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
