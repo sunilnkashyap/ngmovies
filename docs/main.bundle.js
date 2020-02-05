@@ -134,13 +134,13 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_5__angular_material__["b" /* MatCheckboxModule */],
             __WEBPACK_IMPORTED_MODULE_5__angular_material__["c" /* MatGridListModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot([
-                { path: 'ngmovies/home', component: __WEBPACK_IMPORTED_MODULE_11__home_home_component__["a" /* HomeComponent */] },
-                { path: 'ngmovies/dashboard', component: __WEBPACK_IMPORTED_MODULE_7__dashboard_dashboard_component__["a" /* DashboardComponent */] },
-                { path: 'ngmovies/dashboard/:tab', component: __WEBPACK_IMPORTED_MODULE_7__dashboard_dashboard_component__["a" /* DashboardComponent */] },
-                { path: 'ngmovies/play', component: __WEBPACK_IMPORTED_MODULE_7__dashboard_dashboard_component__["a" /* DashboardComponent */] },
-                { path: 'ngmovies/play/:id', component: __WEBPACK_IMPORTED_MODULE_14__play_play_component__["a" /* PlayComponent */] },
-                { path: 'ngmovies/login', component: __WEBPACK_IMPORTED_MODULE_10__login_login_component__["a" /* LoginComponent */] },
-                { path: 'ngmovies', redirectTo: 'ngmovies/dashboard/latest', pathMatch: 'full' }
+                { path: 'home', component: __WEBPACK_IMPORTED_MODULE_11__home_home_component__["a" /* HomeComponent */] },
+                { path: 'dashboard', component: __WEBPACK_IMPORTED_MODULE_7__dashboard_dashboard_component__["a" /* DashboardComponent */] },
+                { path: 'dashboard/:tab', component: __WEBPACK_IMPORTED_MODULE_7__dashboard_dashboard_component__["a" /* DashboardComponent */] },
+                { path: 'play', component: __WEBPACK_IMPORTED_MODULE_7__dashboard_dashboard_component__["a" /* DashboardComponent */] },
+                { path: 'play/:id', component: __WEBPACK_IMPORTED_MODULE_14__play_play_component__["a" /* PlayComponent */] },
+                { path: 'login', component: __WEBPACK_IMPORTED_MODULE_10__login_login_component__["a" /* LoginComponent */] },
+                { path: '', redirectTo: 'dashboard/latest', pathMatch: 'full' }
             ]),
             __WEBPACK_IMPORTED_MODULE_9_angular_star_rating__["a" /* StarRatingModule */].forRoot()
         ],
